@@ -1,0 +1,39 @@
+Script started on 2023-05-16 11:20:15+0000
+#mongo -u root -p exmample
+MongoDB shell version v4.4.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("b8bd99e2-e305-4ca1-aef8-8de67b279c92") }
+MongoDB server version: 4.4.6
+---
+The server generated these startup warnings when booting: 
+        2023-05-16T10:53:43.574+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+        2023-05-16T10:53:48.837+00:00: /sys/kernel/mm/transparent_hugepage/enabled is 'always'. We suggest setting it to 'never'
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> use [3G[Juse[6G[3G[Jus[5G[3G[Ju[4G[3G[J[3Gshow dbs[3G[Jshow dbs[11G
+admin         0.000GB
+config        0.000GB
+local         0.000GB
+the_database  0.000GB
+> use the_database[3G[Juse the_database[19G
+switched to db the_database
+> db.todos.insertOne({text: "Increase the number of tools in my toolbelt", done: false)[3G[Jdb.todos.insertOne({text: "Increase the number of tools in my toolbelt", done: false[87G})[3G[Jdb.todos.insertOne({text: "Increase the number of tools in my toolbelt", done: false})[89G
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("6463674d9145c3a62f4331fb")
+}
+> exit[3G[Jexit[7G
+bye
+# exit
+
+Script done on 2023-05-16 11:22:08+0000
