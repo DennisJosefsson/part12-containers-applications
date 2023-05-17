@@ -5,6 +5,7 @@ const express = require('express')
 const router = express.Router()
 
 const setCount = async () => {
+  console.log('setting todos-count')
   const count = await Todo.countDocuments()
 
   await setAsync('added_todos', count)
